@@ -10,7 +10,7 @@ TARGET = goodbyedpi.exe
 # Linking SSP does not work for some reason, the executable doesn't start.
 #LIBS = -L$(WINDIVERTLIBS) -Wl,-Bstatic -lssp -Wl,-Bdynamic -lWinDivert -lws2_32
 LIBS = -L$(WINDIVERTLIBS) -lWinDivert -lws2_32 -l:libssp.a
-CC = $(CPREFIX)gcc
+CC = cc
 
 CCWINDRES = $(CPREFIX)windres
 ifeq (, $(shell which $(CPREFIX)windres))
