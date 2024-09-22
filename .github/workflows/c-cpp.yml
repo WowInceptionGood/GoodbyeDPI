@@ -15,5 +15,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: cd
       run: cd src
+    - name: clean
+      run: make clean
     - name: make
-      run: make all
+      run: make
